@@ -1,0 +1,138 @@
+/* ScrollBar*/
+body::-webkit-scrollbar {
+    width: 9px;
+    background-color: rgba(0, 0, 0, 0.212);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.822);
+    border-radius: 10px;
+    border: 1px solid white
+}
+
+.cover-home {
+    background-image: url('./img/home-cover.png');
+    width: 1800px;
+    height: 700px;
+    max-width: 100%;
+    max-height: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cover-services {
+    background-color: black;
+    background-image: url('./img/services-cover.png');
+    opacity: 50;
+}
+
+.cover-about {
+    background-image: url('./img/about-cover.png');
+}
+
+.cover-contact {
+    background-image: url('./img/contact-cover.png');
+}
+
+.error {
+    width: 1800px;
+    height: 700px;
+    max-width: 100%;
+    max-height: 780px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.error-code {
+    max-width: 40%;
+}
+
+.btn-circle {
+   
+    border-radius: 50% !important;
+}
+
+.text-link {
+    text-decoration: none
+}
+
+.card-info-right {
+    background-image: url('./img/tetris.png');
+    display: flex;
+    text-align: justify;
+    align-items: center;
+}
+
+.card-info-left {
+    background-image: url('./img/tetris0.png');
+    display: flex;
+    text-align: justify;
+    align-items: center;
+}
+
+.container-services-home {
+    background-color: rgb(221, 219, 219);
+    padding: 5% 3% 5% 3%;
+}
+
+.service-home {
+    border-radius: 5% !important;
+}
+
+.cover-preview-service {
+    position: absolute;
+}
+
+.info-preview-service {
+    position:absolute
+}
+
+
+/* Test Animation */
+.nav-item .nav-link{
+    position: relative;
+    border-bottom: solid 3px;
+    border-color: rgba(0, 0, 0, 0);
+}
+
+.nav-item .nav-link:after{
+    position: absolute;
+    left:0;
+    bottom: -3px;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    transition: 0.5s;
+    content: ""; 
+    background-color: rgb(255, 255, 255);
+}
+
+.nav-item .nav-link:hover:after{
+    transform: scaleX(1);
+}
+
+.nav-item .nav-link:hover{
+    background-color: rgb(63, 62, 62);
+}
+
+.selected-link{
+    border-bottom: solid 3px;
+    border-color: rgb(255, 255, 255) !important;
+    background-color: rgb(63, 62, 62);
+}
+
+
+.form-contact-service {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-card-contact {
+    
+    margin-top: 2%;
+}
